@@ -5,8 +5,8 @@ interface EntryProps {
 export default function Entry(props: EntryProps) {
   return (
     <main class="py-8">
-      <div class="rounded min-w-full min-h-[11rem] overflow-x-auto bg-gray-100">
-        <pre class="p-2 font-mono">
+      <div class="p-3 rounded min-w-full min-h-[11rem] overflow-x-auto bg-gray-100">
+        <pre class="font-mono">
           {props.contents}
         </pre>
       </div>

@@ -61,7 +61,7 @@ export default function UploadForm() {
           id="upload-textarea"
           name="upload-textarea"
           aria-label="upload textarea"
-          class="min-w-full h-44 p-2 border-2 border-black rounded font-mono"
+          class="min-w-full h-44 p-2 bg-gray-50 border-2 border-black rounded font-mono"
           type="text"
           placeholder="Enter your text here."
           maxLength={MAX_TEXT_LENGTH}
@@ -76,10 +76,10 @@ export default function UploadForm() {
         <div class="ml-auto py-4">
           <button
             type="submit"
-            class="px-3 py-2 border-2 border-black rounded hover:underline focus:underline disabled:(opacity-40 cursor-not-allowed)"
+            class="px-4 py-2 bg-gray-900 font-semibold text-gray-50 rounded hover:(opacity-80) disabled:(opacity-40 cursor-not-allowed)"
             disabled={isUploading.value}
           >
-            {isUploading.value ? "Pasting..." : "Paste"}
+            Submit
           </button>
         </div>
       </form>
